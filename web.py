@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import markov
 from bottle import route, run, template
 n=0

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import markov
 model4=markov.phraser('english.txt',order=4)
 phrases=model4.genPhrases(25)

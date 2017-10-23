@@ -7,7 +7,7 @@ Generate words/phrases from a list of other words. Demo [here](https://boulder.p
 
     >git clone git@github.com:sjmduncan/phraser.git
 	>cd phraser
-	>python3 console.py
+	>python console.py
 
 Look at console.py for an example of how to use the `markov.phraser`
 class. Also look at the `norepeat` and `norepeat_buffer` parameters of
@@ -16,16 +16,16 @@ phrases repeatedly and phrases which are in the original list.
 
 ## Web
 
-	>pip3 install bottle
+	>pip install bottle
 	>git clone git@github.com:sjmduncan/phraser.git
 	>cd phraser
-	>python3 web.py
+	>python web.py
 
 Navigate to [localhost:8080](http://localhost:8080/).
 
 ## Requirements
 
-* Python3
+* Python (2 or 3)
 * A text file with a list of phrases (one per line)
 * bottle
 
