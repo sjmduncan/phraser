@@ -1,15 +1,13 @@
 # Markov phraser
 
-Generate words/phrases from a list of other words.
-
-Demo [here](https://boulder.pythonanywhere.com).
+Generate words/phrases from a list of other words. Demo [here](https://boulder.pythonanywhere.com).
 
 
 # How To
 
-    $git clone git@github.com:sjmduncan/phraser.git
-	$cd phraser
-	$python3 console.py
+    >git clone git@github.com:sjmduncan/phraser.git
+	>cd phraser
+	>python3 console.py
 
 Look at console.py for an example of how to use the `markov.phraser`
 class. Also look at the `norepeat` and `norepeat_buffer` parameters of
@@ -18,10 +16,10 @@ phrases repeatedly and phrases which are in the original list.
 
 ## Web
 
-	$pip3 install bottle
-	$git clone git@github.com:sjmduncan/phraser.git
-	$cd phraser
-	$python3 web.py
+	>pip3 install bottle
+	>git clone git@github.com:sjmduncan/phraser.git
+	>cd phraser
+	>python3 web.py
 
 Navigate to [localhost:8080](http://localhost:8080/).
 
