@@ -6,9 +6,9 @@ Generate words/phrases from a list of other words.
 
 # How To
 
-    >git clone git@github.com:sjmduncan/phraser.git
-	>cd phraser
-	>python console.py
+    git clone git@github.com:sjmduncan/phraser.git
+    cd phraser
+    python console.py
 
 Look at console.py for an example of how to use the `markov.phraser`
 class. Also look at the `norepeat` and `norepeat_buffer` parameters of
@@ -17,10 +17,10 @@ phrases repeatedly and phrases which are in the original list.
 
 ## Web
 
-	>pip install bottle
-	>git clone https://github.com/sjmduncan/phraser.git
-	>cd phraser
-	>python web.py
+	pip install bottle
+	git clone https://github.com/sjmduncan/phraser.git
+	cd phraser
+	python web.py
 
 Navigate to [localhost:8080](http://localhost:8080/).
 
@@ -31,7 +31,6 @@ Navigate to [localhost:8080](http://localhost:8080/).
 * bottle
 
 A list of english words is used for the examples in this repository
-(`english.txt`. You can use any file containing arbitrary lines of
+(`english.txt`). You can use any file containing arbitrary lines of
 text. The [demo](https://boulder.pythonanywhere.com) model was built
-from a list of the names of boulder problems in the castle hill basin
-(NZ).
+from a list of boulder problem names.
