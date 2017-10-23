@@ -6,14 +6,14 @@ import operator
 from collections import OrderedDict
 
 class phraser:
-    def __init__(self, filename='', order=1, max_recents=10,norepeat=False):
+    def __init__(self, filename='', order=1, norepeat_buffer=10,norepeat=False):
         if not filename == '':
             self.filename=filename
             self.genModel(filename, order)
         
         # Store recent phrases to avoid repeating too often
         self.recents=[]
-        self.recent_max_count=max_recents
+        self.recent_max_count=norepeat_buffer
         self.norepeat=norepeat
     
     def load(self, jsonfile):

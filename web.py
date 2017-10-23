@@ -5,7 +5,7 @@ n=0
 def index():
     global n
     names=[]
-    names+=model4.genPhrases(10,max=12)
+    names+=model4.genPhrases(10)
     names.sort(key=lambda s:-len(s))
     n+= len(names)
     st='<html><head>\
@@ -19,13 +19,13 @@ def index():
 
     for s in names:
         st+='<p><b>'+s+'</b></p>'
-    st+='<p><a href="/name">more</a></p>'
+    st+='<p><a href="/">more</a></p>'
     st+='<p><a href="https://github.com/sjmduncan/phraser">\
     <small>(code)</small></a></p>'
 
     return st+'</body></html>'
 
 
-model4=markov.phraser('english.txt',4,800)
+model4=markov.phraser('english.txt',4)
 
-run(host='0.0.0.0', port=8080)
+run(host='localhost', port=8080)
