@@ -1,6 +1,7 @@
 # Markov phraser
 
-Generate words/phrases from a list of other words. Demo [here](https://boulder.pythonanywhere.com).
+Generate words/phrases from a list of other words.
+[Demo here](https://boulder.pythonanywhere.com) (based on the names of boulder problems in the castle hill basin in NZ).
 
 
 # How To
