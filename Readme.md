@@ -17,7 +17,7 @@ phrases repeatedly and phrases which are in the original list.
 ## Web
 
 	>pip install bottle
-	>git clone git@github.com:sjmduncan/phraser.git
+	>git clone https://github.com/sjmduncan/phraser.git
 	>cd phraser
 	>python web.py
 
