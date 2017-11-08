@@ -1,47 +1,43 @@
 # Markov phraser
 
-Generate words/phrases from a list of other words.  [Demo
-here](https://boulder.pythonanywhere.com) (based on the names of
-boulder problems in the castle hill basin in NZ).
+Generate words/phrases with a character-level Markov model built from a list of other words/phrases. [Demo here](https://boulder.pythonanywhere.com) (based on the names of
+boulder problems in the castle hill basin/NZ).
 
 
-# How To
+# How?
 
 This is a demo which will build a 4th order markov model from a list
-of english words. It'll print 25 generated words
+of english words. It'll print 25 generated words:
 
-    git clone git@github.com:sjmduncan/phraser.git
-    cd phraser
-    python console.py
+	git clone git@github.com:sjmduncan/phraser.git
+	cd phraser
+	python console.py
 
-There's also a demo which uses bottle so you can generate words from a
-web browser.
+There's also a demo which will run a `bottle` server so you can generate words via a web page.
 
 	pip install bottle
 	git clone https://github.com/sjmduncan/phraser.git
 	cd phraser
 	python web.py
 
-Navigate to [localhost:8080](http://localhost:8080/).
+Then navigate to [localhost:8080](http://localhost:8080/), click 'more' or refresh the page to generate a new list.
 
-For an example of how to use this have a look at `console.py`. The
+# Usage
+Have a look at `console.py` for a simple example. The
 model is build assuming one word or phrase per line of the input file
 (in this case `english.txt`) where each line can include pretty much
 any word/phrase/punctuation that you want.
 
-There's also a **`norepeat`** option to be used with the
-**`norepeat_buffer`** option which means that words/phrases in the
-training and anything in the `norepeat_buffer` will be rejected. It's
-off by default, and it should be used with caution, because it can
-make things really slow, particularly for higher order models.
+There's a `norepeat` option to be used with the
+`norepeat_buffer` option which rejects words/phrases in the
+training and anything in the `norepeat_buffer`. It's
+disabled by default and it should be used with caution because it can
+make things really slow - particularly for higher order models and lists with more entries and/or shorter phrases.
 
-## Requirements
+# Requirements
 
-* Python (2 or 3, for the web demo make sure bottle is installed correctly)
+* Python (2 or 3, make sure you install bottle for the correct version if you want the web demo)
 * A text file with a list of phrases (one per line)
-* bottle
+* **Optional:** [bottle](http://bottlepy.org/docs/dev/index.html)
 
-A list of english words is used for the examples in this repository
-(`english.txt`). You can use any file containing arbitrary lines of
-text. The [demo](https://boulder.pythonanywhere.com) model was built
-from a list of boulder problem names.
+A list of english words is used for the examples in this repository (`english.txt`). You can use any list you want assuming you use one phrase/word per line. Most punctuation should work.
