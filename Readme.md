@@ -10,17 +10,17 @@ boulder problems in the castle hill basin in NZ).
 This is a demo which will build a 4th order markov model from a list
 of english words. It'll print 25 generated words
 
-    >git clone git@github.com:sjmduncan/phraser.git
-	>cd phraser
-	>python console.py
+    git clone git@github.com:sjmduncan/phraser.git
+    cd phraser
+    python console.py
 
 There's also a demo which uses bottle so you can generate words from a
 web browser.
 
-	>pip install bottle
-	>git clone https://github.com/sjmduncan/phraser.git
-	>cd phraser
-	>python web.py
+	pip install bottle
+	git clone https://github.com/sjmduncan/phraser.git
+	cd phraser
+	python web.py
 
 Navigate to [localhost:8080](http://localhost:8080/).
 
@@ -42,7 +42,6 @@ make things really slow, particularly for higher order models.
 * bottle
 
 A list of english words is used for the examples in this repository
-(`english.txt`. You can use any file containing arbitrary lines of
+(`english.txt`). You can use any file containing arbitrary lines of
 text. The [demo](https://boulder.pythonanywhere.com) model was built
-from a list of the names of boulder problems in the castle hill basin
-(NZ).
+from a list of boulder problem names.
