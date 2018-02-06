@@ -36,7 +36,7 @@ make things really slow - particularly for higher order models and lists with mo
 
 # Requirements
 
-* Python (2 or 3, make sure you install bottle for the correct version if you want the web demo)
+* Python (2 or 3)
 * A text file with a list of phrases (one per line)
 * **Optional:** [bottle](http://bottlepy.org/docs/dev/index.html)
 
