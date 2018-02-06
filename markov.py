@@ -109,7 +109,7 @@ class phraser:
             # word list to check against. So don't check
             if self.norepeat:
                 for ph in self.phrases:
-                    if (phrase in ph) or (ph in phrase):
+                    if (phrase in ph):
                         exists=True
                         break;
 

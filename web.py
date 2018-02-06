@@ -7,7 +7,7 @@ n=0
 def index():
     global n
     names=[]
-    names+=model4.genPhrases(10)
+    names+=model3.genPhrases(8)
     names.sort(key=lambda s:-len(s))
     n+= len(names)
     st='<html><head>\
@@ -28,6 +28,6 @@ def index():
     return st+'</body></html>'
 
 
-model4=markov.phraser('english.txt',4)
+model3=markov.phraser('english.txt',3,norepeat=True,norepeat_buffer=300)
 
 run(host='localhost', port=8080)

@@ -6,7 +6,7 @@ boulder problems in the castle hill basin/NZ).
 
 # How?
 
-This is a demo which will build a 4th order markov model from a list
+This is a demo which will build a 3rd order markov model from a list
 of english words. It'll print 25 generated words:
 
 	git clone git@github.com:sjmduncan/phraser.git
